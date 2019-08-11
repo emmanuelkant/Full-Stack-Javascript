@@ -34,8 +34,6 @@ export default function Login({ navigation }) {
 
     await AsyncStorage.setItem('user', _id);
 
-    console.log(_id);
-
     navigation.navigate('Main', { user: _id });
   }
 
